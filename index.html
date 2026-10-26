@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>Privacy Policy · ArtonPri</title>
+  <title>Privacy Policy · AQFort</title>
   <style>
     * {
       margin: 0;
@@ -13,198 +13,251 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #f9fafb;
-      color: #1e293b;
-      line-height: 1.6;
-      padding: 0 0 40px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.65;
+      padding: 32px 16px 50px;
       word-wrap: break-word;
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
       max-width: 680px;
       margin: 0 auto;
-      padding: 20px 16px;
     }
 
-    /* header */
+    /* Header Styling */
     .policy-header {
       background: #ffffff;
-      border-radius: 20px;
-      padding: 28px 22px 22px;
-      margin: 24px 0 18px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-      border: 1px solid #eef2f6;
+      border-radius: 24px;
+      padding: 32px 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+      border: 1px solid rgba(226, 232, 240, 0.8);
     }
 
     .app-badge {
-      display: inline-block;
-      background: #eef2ff;
-      color: #4f46e5;
-      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 0.825rem;
       font-weight: 600;
-      letter-spacing: 0.3px;
-      padding: 4px 12px;
-      border-radius: 30px;
-      margin-bottom: 12px;
+      letter-spacing: 0.02em;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    .app-badge span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #10b981;
     }
 
     h1 {
-      font-size: 1.9rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
+      font-size: 2.1rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.03em;
       color: #0f172a;
-      margin: 6px 0 8px;
+      margin-bottom: 10px;
+    }
+
+    .header-subtext {
+      color: #64748b;
+      font-size: 0.98rem;
     }
 
     .last-updated {
-      color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 10px;
-      border-top: 1px solid #e2e8f0;
-      padding-top: 14px;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid #f1f5f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    /* sections */
+    /* Content Cards */
     .section {
       background: #ffffff;
-      border-radius: 18px;
-      padding: 22px 20px;
+      border-radius: 20px;
+      padding: 28px;
       margin-bottom: 16px;
-      border: 1px solid #eef2f6;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      box-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.03);
+      transition: border-color 0.2s ease;
+    }
+
+    .section:hover {
+      border-color: #cbd5e1;
     }
 
     h2 {
-      font-size: 1.35rem;
-      font-weight: 650;
+      font-size: 1.25rem;
+      font-weight: 700;
       color: #0f172a;
       margin-bottom: 14px;
-      letter-spacing: -0.01em;
-      border-left: 4px solid #4f46e5;
-      padding-left: 12px;
-    }
-
-    h3 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: #1e293b;
-      margin: 18px 0 8px;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     p, li {
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       color: #334155;
     }
 
+    p + p {
+      margin-top: 12px;
+    }
+
     ul {
-      padding-left: 20px;
-      margin: 10px 0 12px;
+      padding-left: 0;
+      list-style: none;
+      margin: 14px 0;
     }
 
     li {
-      margin-bottom: 6px;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
     }
 
+    li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #6366f1;
+    }
+
+    strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    /* Links & Actions */
     a {
-      color: #4f46e5;
+      color: #6366f1;
       text-decoration: none;
       font-weight: 500;
-      word-break: break-word;
+      transition: color 0.15s ease;
     }
 
     a:hover {
+      color: #4f46e5;
       text-decoration: underline;
     }
 
     .contact-box {
       background: #f8fafc;
-      border-radius: 14px;
-      padding: 16px 18px;
+      border-radius: 16px;
+      padding: 20px;
       border: 1px solid #e2e8f0;
-      margin-top: 12px;
-    }
-
-    .contact-box strong {
-      color: #0f172a;
+      margin-top: 16px;
     }
 
     .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      padding: 8px 14px;
+      background: #e0e7ff;
+      color: #4338ca;
       font-weight: 600;
-      background: #eef2ff;
-      padding: 2px 8px;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 4px;
+      font-size: 0.92rem;
+      border-radius: 10px;
+      transition: background 0.15s ease;
     }
 
+    .email-link:hover {
+      background: #c7d2fe;
+      text-decoration: none;
+    }
+
+    /* Footer */
     .footer-note {
       text-align: center;
       color: #94a3b8;
       font-size: 0.85rem;
-      margin-top: 28px;
+      margin-top: 36px;
       padding: 0 12px;
     }
 
-    /* mobile fine-tune */
+    /* Mobile Responsive adjustments */
     @media (max-width: 480px) {
-      .container {
-        padding: 12px 12px;
+      body {
+        padding: 16px 12px 32px;
       }
       .policy-header {
-        padding: 22px 18px;
-        margin: 16px 0 14px;
+        padding: 24px 20px;
+        border-radius: 20px;
       }
       h1 {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
       }
       .section {
-        padding: 18px 16px;
+        padding: 22px 18px;
+        border-radius: 16px;
       }
       h2 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Header card -->
+    <!-- Header Card -->
     <div class="policy-header">
-      <span class="app-badge">📱 ArtonPri</span>
+      <div class="app-badge">
+        <span></span> AQFort Application
+      </div>
       <h1>Privacy Policy</h1>
-      <p style="color:#475569; margin-top:6px;">Your privacy matters to us. This policy explains what we collect, why we collect it, and how we protect your information.</p>
+      <p class="header-subtext">Your privacy matters to us. This policy explains what we collect, why we collect it, and how we protect your information.</p>
       <div class="last-updated">
-        <span>Last updated: October 17, 2026</span>
+        <span>Updated October 17, 2026</span>
+        <span>Version 1.0</span>
       </div>
     </div>
 
     <!-- 1. Overview -->
     <div class="section">
       <h2>1. Overview</h2>
-      <p>ArtonPri ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy applies to all users of the ArtonPri mobile application and related services (collectively, the "Service"). By using ArtonPri, you agree to the practices described in this policy.</p>
+      <p>AQFort ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy applies to all users of the AQFort mobile application and related services (collectively, the "Service"). By using AQFort, you agree to the practices described in this policy.</p>
       <p>We keep this policy clear and straightforward. If you have any questions, please reach out using the contact details in Section 8.</p>
     </div>
 
-    <!-- 2. Information we collect -->
+    <!-- 2. Information We Collect -->
     <div class="section">
       <h2>2. Information We Collect</h2>
       <p>We only collect information that is necessary to provide and improve the Service. We do not sell your personal data.</p>
       <ul>
         <li><strong>Information you provide:</strong> When you contact us or use certain features, we may collect your email address, feedback, or any content you voluntarily submit (e.g., support requests).</li>
         <li><strong>Usage data (automatic):</strong> We may collect anonymized technical data such as app version, device type, operating system, crash logs, and basic interaction statistics. This data is aggregated and cannot be used to identify you personally.</li>
-        <li><strong>No account required:</strong> ArtonPri does not require you to create an account. We do not collect your name, phone number, or precise location unless you explicitly provide it.</li>
+        <li><strong>No account required:</strong> AQFort does not require you to create an account. We do not collect your name, phone number, or precise location unless you explicitly provide it.</li>
       </ul>
       <p>We do <strong>not</strong> collect sensitive categories (e.g., health, race, religion, sexual orientation) or financial information.</p>
     </div>
 
-    <!-- 3. How we use information -->
+    <!-- 3. How We Use Information -->
     <div class="section">
       <h2>3. How We Use Information</h2>
       <p>The limited information we collect is used solely for the following purposes:</p>
       <ul>
-        <li>To operate, maintain, and improve the functionality of ArtonPri.</li>
+        <li>To operate, maintain, and improve the functionality of AQFort.</li>
         <li>To respond to your support requests and communicate with you (only if you contact us).</li>
         <li>To analyze aggregated usage trends to enhance user experience and app stability.</li>
         <li>To detect, prevent, and address technical issues or security threats.</li>
@@ -212,14 +265,14 @@
       <p>We never use your data for advertising, profiling, or any commercial purposes outside the scope of the Service.</p>
     </div>
 
-    <!-- 4. Legal basis & retention -->
+    <!-- 4. Legal Basis & Data Retention -->
     <div class="section">
       <h2>4. Legal Basis & Data Retention</h2>
       <p>We rely on our legitimate interest in providing a secure, functional app experience. Where you contact us, we process your email address based on your consent and our need to respond.</p>
       <p>We retain personal data only as long as necessary to fulfill the purposes described in this policy. Support-related emails are deleted after 12 months. Aggregated usage data is kept for a maximum of 24 months and then permanently deleted.</p>
     </div>
 
-    <!-- 5. Sharing & disclosure -->
+    <!-- 5. Sharing & Disclosure -->
     <div class="section">
       <h2>5. Sharing & Disclosure</h2>
       <p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties. We only share data in the following limited circumstances:</p>
@@ -230,42 +283,44 @@
       <p>We never share your personal information with advertisers or data brokers.</p>
     </div>
 
-    <!-- 6. Data security -->
+    <!-- 6. Data Security -->
     <div class="section">
       <h2>6. Data Security</h2>
       <p>We implement appropriate technical and organizational measures to safeguard your information. All data is encrypted in transit (TLS) and at rest. Access to any personal data is restricted to authorized personnel only.</p>
       <p>While no method of transmission is 100% secure, we continuously review our security practices to protect against unauthorized access, alteration, or destruction.</p>
     </div>
 
-    <!-- 7. Children's privacy -->
+    <!-- 7. Children's Privacy -->
     <div class="section">
       <h2>7. Children's Privacy</h2>
-      <p>ArtonPri is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately, and we will promptly delete such information.</p>
+      <p>AQFort is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately, and we will promptly delete such information.</p>
     </div>
 
-    <!-- 8. Contact us -->
+    <!-- 8. Contact Us -->
     <div class="section">
       <h2>8. Contact Us</h2>
       <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact our privacy team:</p>
       <div class="contact-box">
-        <strong>ArtonPri Privacy Support</strong><br>
-        <span style="color:#475569;">Email us at:</span><br>
-        <a class="email-link" href="mailto:bakkabdo599@gmail.com">bakkabdo599@gmail.com</a>
-        <p style="margin-top:10px; font-size:0.9rem; color:#475569;">We typically respond within 2–3 business days.</p>
+        <strong>AQFort Support Team</strong>
+        <p style="color:#64748b; font-size: 0.9rem; margin-top: 2px;">Email inquiries:</p>
+        <a class="email-link" href="mailto:bakkabdo599@gmail.com">
+          ✉️ bakkabdo599@gmail.com
+        </a>
+        <p style="margin-top:12px; font-size:0.88rem; color:#64748b;">We typically respond within 2–3 business days.</p>
       </div>
-      <p style="margin-top:14px;">For the purpose of data protection inquiries, we are the data controller responsible for your personal information.</p>
+      <p style="margin-top:16px;">For the purpose of data protection inquiries, we are the data controller responsible for your personal information.</p>
     </div>
 
-    <!-- 9. Changes to this policy -->
+    <!-- 9. Changes to This Policy -->
     <div class="section">
       <h2>9. Changes to This Policy</h2>
       <p>We may update this Privacy Policy from time to time. When we make material changes, we will revise the “Last updated” date at the top of this page and, where appropriate, notify you via the app or email.</p>
       <p>We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
     </div>
 
-    <!-- footer -->
+    <!-- Footer -->
     <div class="footer-note">
-      © 2026 ArtonPri. All rights reserved. · Made with respect for your privacy.
+      © 2026 AQFort. All rights reserved. · Made with respect for your privacy.
     </div>
   </div>
 </body>
